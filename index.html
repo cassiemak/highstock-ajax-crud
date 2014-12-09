@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+
+    <title>Lets Play with HighStocks</title>
+
+    <!-- Jquery Library -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"src="js/jquery.serialize-object.js"></script>
+
+    <!-- Moment JS Library -->
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    
+    <!-- Boostrap Library -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- // <script type="text/javascript"></script> -->
+
+    <!--Highchart Library -->
+    <script type="text/javascript" src="js/highstock.js"></script>
+    <script type="text/javascript" src="js/exporting.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/application.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+  
+  <body>
+    <div class="container">
+        <div class="row" id="chart">
+        </div>
+        <div class="row col-xs-6" id="annotation">
+            <form id="annotation-submission" class="annotationForm col-xs-6 col-xs-offset-3">
+                <label>Enter Your Annotation Below:</label>
+                <input name="name" type="text" class="name col-xs-12" placeholder="Cass" value="Cass">
+                <input name="title" type="text" class="title col-xs-12" placeholder="Message Title">
+                <input name="text" type="text" class="comment col-xs-12" placeholder="Message">
+                <input name="x" type="datetime" class="col-xs-12">
+                <button type="button" class="submit btn btn-default btn-sm col-xs-6">SUBMIT</button>
+            </form>
+        </div>
+        <div class="col-xs-6">
+            <label>Annotation Entered:</label>
+            <div class="display"></div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th colspan="1">ID</th>
+                        <th colspan="1">Date</th>
+                        <th colspan="1">Title</th>
+                        <th colspan="1">Owner</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="change">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+
